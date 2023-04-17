@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Chirp";
+    src: url("./fonts/chirp.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chirp", sans-serif;
+}
+
+.container-app {
+    background-color: #222222;
+    min-height: 100vh;
+    display: flex;
+}
+
+.container-cards {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.container-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.container-avatar > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-data {
+    flex-grow: 9;
+}
+
+.container-data > h2 {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.container-data > h3 {
+    color: #A7A7A7;
+    font-weight: 200;
+    font-size: 13px;
+}
+
+.btn-follow {
+    border-radius: 20px;
+    padding: 6px 18px;
+    border: 1px solid #000;
+    font-size: 14px;
+    font-weight: 900;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.btn-follow:hover {
+    background-color: #c9c9c9;
+}
+
+.btn-follow.isFollow {
+    background-color: transparent;
+    color: #fff;
+    width: 15ch;
+    border: 1px solid #bbb;
+}
+
+.btn-follow.isFollow:hover {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.209);
+    border: 1px solid red;
+    transition: background-color .3s ease;
+}
